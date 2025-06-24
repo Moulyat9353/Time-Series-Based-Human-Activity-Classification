@@ -71,23 +71,6 @@ Key challenges addressed:
 - Applied to raw and PCA-transformed features
 
 - Evaluated with confusion matrix and class-wise ROC
-  
-# 🔍 Results:
-| Metric    | Before SMOTE (Train Set) | After SMOTE (Train Set) |
-| --------- | ----------------------- | ---------------------- |
-| Precision | `0.34`                 | `0.7179`                |
-| Recall    | `0.49`                 | `0.6222`                |
-| F1 Score  | `0.40`                 | `0.6666`                |
-| AUC       | `0.6845`                 | `0.7675`                |  
-
-| Metric    | Before SMOTE (Test Set) | After SMOTE (Test Set) |
-| --------- | ----------------------- | ---------------------- |
-| Precision | `0.42`                 | `0.0`                |
-| Recall    | `0.50`                 | `0.0`                |
-| F1 Score  | `0.45`                 | `0.0`                |
-| AUC       | `0.5862`                 | `0.6552`                |
-
-SMOTE did not help in this scenario as it made the model better at recognizing the synthetic oversampled minority class but failing on actual unseen minority-class samples. Alternative solutions like cost-sensitive learning, or hybrid approaches might be better for handling class imbalance while maintaining generalization.
 
 # 🛠️Technologies Used:  
 - Python 3.10+
